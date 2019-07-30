@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="reviews-users">
+    <p class="reviews-users__number">
+      4 478 815
+    </p>
+    <p class="reviews_users__text">
+      человек уже тренируются на Викиум
+    </p>
+  </div>
+  <div ngClass="reviews-items visible" *ngFor="let review of reviewsShown">
+    <div class="review">
+      <img src="{{review.image}}" alt="img" class="review__photo">
+      <div class="review__bloquote">
+        <p class="review__text">{{review.text}}</p>
+        <p class="review__name">{{review.name}}</p>
+      </div>
+    </div>
+  </div>
+  <div ngClass="reviews-items invisible" [className]=myClass *ngFor="let review of reviewsHidden">
+    <div class="review">
+      <img src="{{review.image}}" alt="img" class="review__photo">
+      <div class="review__bloquote">
+        <p class="review__text">{{review.text}}</p>
+        <p class="review__name">{{review.name}}</p>
+      </div>
+    </div>
+  </div>
+  <button class="reviews__btn-more" (click)="toggle_class()"
+          *ngIf="this.isButtonVisible"> Еще отзывы </button>
+  <button class="blue-button">Присоединиться к Викиум</button>
+</div>

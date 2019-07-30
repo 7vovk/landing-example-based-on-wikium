@@ -1,0 +1,102 @@
+:host {
+  display: block;
+  padding: 85px 0 100px;
+}
+
+.container {
+  display: block;
+  width: 1105px;
+  margin: 0 auto;
+  .reviews-users {
+    margin: 0 auto 100px;
+    .reviews-users__number {
+      margin: 0 auto;
+      font-size: 72px;
+      font-weight: 600;
+      color: #27a8e0;
+      text-align: center;
+    }
+    .reviews_users__text {
+      margin: 0 auto;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+  .visible {
+    box-sizing: border-box;
+    display: inline-flex;
+    width: 32.9%;
+    justify-content: space-around;
+    .review {
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 60px;
+      font-size: 14px;
+      .review__photo {
+        display: inline-block;
+        width: 63px;
+        height: 63px;
+        vertical-align: top;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        border-radius: 50%;
+      }
+      .review__bloquote {
+        width: 208px;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        .review__text {
+          min-height: 114px;
+          margin: 0 0 30px;
+        }
+        .review__name {
+          margin: 0;
+          font-weight: 700;
+          padding-right: 45px;
+        }
+      }
+    }
+  }
+  .reviews__btn-more {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    line-height: normal;
+    text-decoration: none;
+    color: #26aded;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .blue-button {
+    display: block;
+    margin: 80px auto 0;
+    background-color: #03a9f4;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    padding: 16px 56px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    &:hover {
+      box-shadow: 0 6px 16px 0 rgba(0, 0, 0, .2);
+      background-color: #35baf6;
+    }
+  }
+}
+
+.invisible {
+  display: none;
+}
