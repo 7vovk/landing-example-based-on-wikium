@@ -1,0 +1,114 @@
+:host {
+  display: block;
+  height: 365px;
+  background-color: #333;
+  color: #fff;
+  padding: 32px 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1105px;
+  margin: 0 auto;
+  .footer {
+    &__inner {
+      height: 160px;
+      margin-bottom: 55px;
+      display: flex;
+      justify-content: space-between;
+      .footer__section--info {
+        display: flex;
+        width: 100%;
+        .footer__info-item {
+          width: 33%;
+          margin-left: 5%;
+          .footer__info-title {
+            text-transform: uppercase;
+            color: #ffffff99;
+            margin-bottom: 15px;
+          }
+          .footer__info-link {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            line-height: 24px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .footer__section--contacts {
+        width: 32%;
+        .footer__contacts-item {
+          &__icons {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 15px;
+            img {
+              height: 20px;
+              filter: grayscale(100%) contrast(0);
+              &:hover {
+                filter: grayscale(0%);
+                cursor: pointer;
+              }
+            }
+          }
+          .footer__section-link {
+            margin-left: 5%;
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .footer__contacts-item--corporate {
+          margin-left: 5%;
+          .footer__section-link {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            line-height: 24px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          p {
+            margin-top: 10%;
+            font-size: 13px;
+            color: #ffffff99;
+          }
+        }
+      }
+    }
+    &:after {
+      content: "";
+      height: 1px;
+      width: 96%;
+      display: block;
+      background: #ffffff99;
+      margin: 0 4%;
+    }
+  }
+  .footer__copyright {
+    margin: 2% 4%;
+    display: flex;color:
+    #ffffff99;
+    .footer__text {
+      width: 420px;
+    }
+    .footer__text--tel {
+      width: 220px;
+      a {
+        text-decoration: none;
+        color: #ffffff99;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+}

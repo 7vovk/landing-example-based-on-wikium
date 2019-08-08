@@ -9,14 +9,14 @@
   margin: 0 auto;
   .reviews-users {
     margin: 0 auto 100px;
-    .reviews-users__number {
+    &__number {
       margin: 0 auto;
       font-size: 72px;
       font-weight: 600;
       color: #27a8e0;
       text-align: center;
     }
-    .reviews_users__text {
+      &__text {
       margin: 0 auto;
       font-size: 16px;
       font-weight: 600;
@@ -33,7 +33,7 @@
       vertical-align: top;
       margin-bottom: 60px;
       font-size: 14px;
-      .review__photo {
+      &__photo {
         display: inline-block;
         width: 63px;
         height: 63px;
@@ -42,7 +42,7 @@
         margin-bottom: 16px;
         border-radius: 50%;
       }
-      .review__bloquote {
+      &__bloquote {
         width: 208px;
         display: inline-block;
         vertical-align: top;

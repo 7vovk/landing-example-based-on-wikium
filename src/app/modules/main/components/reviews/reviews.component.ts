@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 
-import {Reviews} from '../../models/reviews';
-import {REVIEWS_SHOWN} from '../../mock_shown_reviews';
-import {REVIEWS_HIDDEN} from '../../mock_hidden_reviews';
-import {ToggleClassService} from '../../services/toggleclass.service';
+import {Reviews} from '../../../shared/models/reviews';
+import {REVIEWS_SHOWN} from '../../../mock_shown_reviews';
+import {REVIEWS_HIDDEN} from '../../../mock_hidden_reviews';
+import {ToggleClassService} from '../../../shared/services/toggleclass.service';
 
 @Component({
   selector: 'app-reviews',

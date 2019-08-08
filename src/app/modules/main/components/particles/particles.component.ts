@@ -1,5 +1,4 @@
 import { Component, ViewChild, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
-import { fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-particles',

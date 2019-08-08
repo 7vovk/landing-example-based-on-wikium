@@ -1,4 +1,4 @@
-import {Reviews} from './models/reviews';
+import {Reviews} from './shared/models/reviews';
 
 export const REVIEWS_SHOWN: Reviews[] = [
   {
