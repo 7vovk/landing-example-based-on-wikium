@@ -9,12 +9,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatGridListModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from '../../app-routing.module';
+import {ReactiveFormsModule} from '@angular/forms';
+import {AuthComponent} from '../auth/auth';
+import {AdminComponent} from '../auth/admin';
+import {LoginComponent} from '../auth/login';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     MatGridListModule,
   ],
   declarations: [
@@ -24,6 +29,9 @@ import { AppRoutingModule } from '../../app-routing.module';
     ScienceComponent,
     AboutComponent,
     ReviewsComponent,
+    AuthComponent,
+    AdminComponent,
+    LoginComponent,
   ],
   exports: [
     ParticlesComponent,
