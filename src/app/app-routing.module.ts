@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {AuthComponent} from './modules/auth/auth';
 import {AuthGuard} from './modules/auth/_guards';
 import {AdminComponent} from './modules/auth/admin';
 import {Role} from './modules/auth/_models';
@@ -21,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent,
   },
 
   // otherwise redirect to auth

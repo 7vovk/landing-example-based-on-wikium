@@ -1,8 +1,16 @@
-<h1>Admin</h1>
-<p>This page can only be accessed by administrators.</p>
-<div>
-  All users from secure (admin only) api end point:
-  <ul>
-    <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
-  </ul>
+<div class="container">
+  <div class="row justify-content-md-center mt-5">
+    <div class="col-md-auto">
+      <h1>Администратор</h1>
+      <p>Эта страница доступна только администраторам.</p>
+      <div>
+        Список пользователей:
+        <ul>
+          <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
+        </ul>
+        <button routerLink="" class="btn btn-primary mr-1">Главная страница</button>
+        <button routerLink="" (click)="logout()" class="btn btn-primary ml-1">Выйти</button>
+      </div>
+    </div>
+  </div>
 </div>
