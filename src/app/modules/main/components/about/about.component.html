@@ -1,30 +1,65 @@
-<h3 class="title">Как тренироваться</h3>
-<div class="about-howto">
-  <div class="about-howto__items">
-    <article class="about-howto__item">
-      <img src="../../../../../assets/about/Pic1.PNG" alt="Оцените ваши способности">
-      <img class="arrow" src="https://wikium.ru/build/61038741f0a2bf0ac6ddd4d914d0fc62.svg" alt="arrow">
-      <h4 class="about-howto__item-title">Оцените ваши способности</h4>
-      <p class="about-howto__item-text">Пройдите вводное тестирование, чтобы получить оценку вашего текущего уровня
-        памяти, внимания и мышления. Для вас будет сформирована персональная программа развития
-      </p>
-    </article>
-    <article class="about-howto__item">
-      <img src="../../../../../assets/about/Pic2.PNG" alt="Выполняйте ежедневную тренировку">
-      <img class="arrow" src="https://wikium.ru/build/61038741f0a2bf0ac6ddd4d914d0fc62.svg" alt="arrow">
-      <h4 class="about-howto__item-tittle">Выполняйте ежедневную тренировку</h4>
-      <p class="about-howto__item-text">Ежедневная программа развития включает разминку и тренировку. Это займет у вас
-        15 минут в день
-      </p>
-    </article>
-    <article class="about-howto__item">
-      <img src="../../../../../assets/about/Pic3.PNG" alt="Следите за вашим развитием">
-      <h4 class="about-howto__item-title">Следите за вашим развитием</h4>
-      <p class="about-howto__item-text">Следите за статистикой ваших тренировок, улучшайте показатели, сравнивайте свои
-        достижения с результатами других пользователей
-      </p>
-    </article>
+<ng-template #Russian>
+  <h3 class="title">Как тренироваться</h3>
+  <div class="about-howto">
+    <div class="about-howto__items">
+      <article class="about-howto__item">
+        <img src="../../../../../assets/about/Pic1.PNG" alt="Оцените ваши способности">
+        <img class="arrow" src="https://wikium.ru/build/61038741f0a2bf0ac6ddd4d914d0fc62.svg" alt="arrow">
+        <h4 class="about-howto__item-title">Оцените ваши способности</h4>
+        <p class="about-howto__item-text">Пройдите вводное тестирование, чтобы получить оценку вашего текущего уровня
+          памяти, внимания и мышления. Для вас будет сформирована персональная программа развития
+        </p>
+      </article>
+      <article class="about-howto__item">
+        <img src="../../../../../assets/about/Pic2.PNG" alt="Выполняйте ежедневную тренировку">
+        <img class="arrow" src="https://wikium.ru/build/61038741f0a2bf0ac6ddd4d914d0fc62.svg" alt="arrow">
+        <h4 class="about-howto__item-title">Выполняйте ежедневную тренировку</h4>
+        <p class="about-howto__item-text">Ежедневная программа развития включает разминку и тренировку. Это займет у вас
+          15 минут в день
+        </p>
+      </article>
+      <article class="about-howto__item">
+        <img src="../../../../../assets/about/Pic3.PNG" alt="Следите за вашим развитием">
+        <h4 class="about-howto__item-title">Следите за вашим развитием</h4>
+        <p class="about-howto__item-text">Следите за статистикой ваших тренировок, улучшайте показатели, сравнивайте
+          свои достижения с результатами других пользователей
+        </p>
+      </article>
 
+    </div>
+    <button class="blue_button">Начать тренировку</button>
   </div>
-  <button class="blue_button">Начать тренировку</button>
+</ng-template>
+
+<div *ngIf="this.languageService.isLangRus; else Russian">
+  <h3 class="title">How to train</h3>
+  <div class="about-howto">
+    <div class="about-howto__items">
+      <article class="about-howto__item">
+        <img src="../../../../../assets/about/Pic1.PNG" alt="Оцените ваши способности">
+        <img class="arrow" src="https://wikium.ru/build/61038741f0a2bf0ac6ddd4d914d0fc62.svg" alt="arrow">
+        <h4 class="about-howto__item-title">Rate your abilities</h4>
+        <p class="about-howto__item-text">Take introductory testing to get an assessment of your current level of
+          memory, attention, and thinking. A personal development program will be formed for you.
+        </p>
+      </article>
+      <article class="about-howto__item">
+        <img src="../../../../../assets/about/Pic2.PNG" alt="Выполняйте ежедневную тренировку">
+        <img class="arrow" src="https://wikium.ru/build/61038741f0a2bf0ac6ddd4d914d0fc62.svg" alt="arrow">
+        <h4 class="about-howto__item-title">Do your daily workout</h4>
+        <p class="about-howto__item-text">The daily development program includes warm-up and workout. It takes you 15
+          minutes a day.
+        </p>
+      </article>
+      <article class="about-howto__item">
+        <img src="../../../../../assets/about/Pic3.PNG" alt="Следите за вашим развитием">
+        <h4 class="about-howto__item-title">Keep track of your improving</h4>
+        <p class="about-howto__item-text">Follow the statistics of your workouts, improve performance, compare your
+          achievements with the results of other users
+        </p>
+      </article>
+
+    </div>
+      <button class="blue_button">Start training</button>
+  </div>
 </div>

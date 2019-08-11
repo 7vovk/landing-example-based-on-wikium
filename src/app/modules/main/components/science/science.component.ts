@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LanguageService} from '../../../shared/services/language.service';
 
 @Component({
   selector: 'app-science',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScienceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private languageService: LanguageService) { }
 
   ngOnInit() {
+  }
+  changeLang() {
+    this.languageService.changeLang();
   }
 
 }

@@ -1,4 +1,5 @@
-<div class="audience">
+<ng-template #Russian>
+  <div class="audience">
   <div class="audience-container">
     <div class="container">
       <h3>Кому полезны наши тренажеры?</h3>
@@ -26,6 +27,42 @@
           <ul>
             <li>Дольше сохранять остроту и ясность ума</li>
             <li>Профилактика возрастных заболеваний, вызванных снижением интеллектуальной нагрузки</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</ng-template>
+
+<div class="audience" *ngIf="this.languageService.isLangRus; else Russian">
+  <div class="audience-container">
+    <div class="container">
+      <h3>Who benefits from our simulators?</h3>
+      <div class="item-container">
+        <div class="audience-item">
+          <img src="../../../../../assets/audience/young.svg" alt="Younger age">
+          <h4>Younger age</h4>
+          <ul>
+            <li>Improve student learning</li>
+            <li>Attention Deficit Disorder Prevention</li>
+          </ul>
+        </div>
+        <div class="audience-item">
+          <img src="../../../../../assets/audience/middle.svg" alt="Middle age">
+          <h4>Middle age</h4>
+          <ul>
+            <li>Improve personal productivity, efficiency</li>
+            <li>Make fewer mistakes and shortcomings at work</li>
+            <li>Keep your brain toned throughout the day</li>
+          </ul>
+        </div>
+        <div class="audience-item">
+          <img src="../../../../../assets/audience/old.svg" alt="Elderly age">
+          <h4>Elderly age</h4>
+          <ul>
+            <li>Keep sharpness and clarity of mind longer</li>
+            <li>Prevention of age-related diseases caused by a decrease in intellectual workload</li>
           </ul>
         </div>
       </div>

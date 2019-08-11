@@ -10,6 +10,22 @@
     width: 50%;
     height: 80px;
     margin: 50px auto;
+    .header-top__lang {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    button {
+      height: 40px;
+      background: no-repeat;
+      color: #fff;
+      font-weight: 600;
+      &:hover {
+        cursor: pointer;
+        background: #ffffff6e;
+        color: #3b2b6a;
+      }
+    }
     .header-top__logo {
       img {
         width: 150px;

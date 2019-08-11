@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LanguageService} from '../../../shared/services/language.service';
 
 @Component({
   selector: 'app-benefits',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./benefits.component.scss']
 })
 export class BenefitsComponent {
+  constructor(private languageService: LanguageService) { }
 
-  constructor() { }
+  changeLang() {
+    this.languageService.changeLang();
+  }
 }

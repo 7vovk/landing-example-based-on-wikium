@@ -1,18 +1,40 @@
-<div class="header">
+<ng-template #Russian>
+  <div class="header">
+    <div class="header-top">
+      <div class="header-top__logo"><img src="../../../../../assets/logos/header-logo.svg" alt=""></div>
+      <button type="button" class="btn btn-light" (click)="changeLang()">Сменить язык</button>
+      <button *ngIf="isAdmin" type="button" class="btn btn-light" (click)="admin()">Администратор</button>
+      <button *ngIf="currentUser" type="button" class="btn btn-light" (click)="logout()">Выйти</button>
+    </div>
+    <header>
+      <h1 class="header-title">Тренируйте мозг с удовольствием</h1>
+      <p class="header-subtitle">Развивайте память, внимание и мышление с помощью онлайн-тренажеров</p>
+    </header>
+    <div class="header-btns">
+      <button class="header-btns__start">Начать развиваться</button>
+      <a *ngIf="!currentUser" (click)="login()">У меня уже есть аккаунт</a>
+
+      <app-arrow-down (click)="scrollToBenefits()"></app-arrow-down>
+    </div>
+  </div>
+</ng-template>
+
+<div class="header" *ngIf="this.languageService.isLangRus; else Russian">
   <div class="header-top">
     <div class="header-top__logo"><img src="../../../../../assets/logos/header-logo.svg" alt=""></div>
-    <div class="header-top__lang">Change language</div>
-    <a (click)="admin()" *ngIf="isAdmin">Администратор</a>
-    <a *ngIf="currentUser" (click)="logout()">Выйти</a>
+    <button type="button" class="btn btn-light" (click)="changeLang()">Change language</button>
+    <button *ngIf="isAdmin" type="button" class="btn btn-light" (click)="admin()">Admin</button>
+    <button *ngIf="currentUser" type="button" class="btn btn-light" (click)="logout()">Log out</button>
   </div>
   <header>
-    <h1 class="header-title">Тренируйте мозг с удовольствием</h1>
-    <p class="header-subtitle">Развивайте память, внимание и мышление с помощью онлайн-тренажеров</p>
+    <h1 class="header-title">Train your brain with pleasure</h1>
+    <p class="header-subtitle">Develop memory, attention and thinking with online simulators</p>
   </header>
   <div class="header-btns">
-    <button class="header-btns__start">Начать развиваться</button>
+    <button class="header-btns__start">Start growth</button>
     <a *ngIf="!currentUser" (click)="login()">У меня уже есть аккаунт</a>
 
     <app-arrow-down (click)="scrollToBenefits()"></app-arrow-down>
   </div>
 </div>
+

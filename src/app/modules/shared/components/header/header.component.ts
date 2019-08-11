@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {Role, User} from '../../../auth/_models';
 import {AuthenticationService} from '../../../auth/_services';
+import {LanguageService} from '../../services/language.service';
 
 @Component({
   selector: 'app-header',
@@ -14,7 +15,8 @@ export class HeaderComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private authenticationService: AuthenticationService
+    private authenticationService: AuthenticationService,
+    private languageService: LanguageService,
   ) {
     this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
   }
@@ -30,7 +32,6 @@ export class HeaderComponent implements OnInit {
   login(): void {
     this.router.navigate(['/login']);
   }
-  
   admin(): void {
     this.router.navigate(['/admin']);
   }
@@ -42,5 +43,8 @@ export class HeaderComponent implements OnInit {
   logout() {
     this.authenticationService.logout();
     this.router.navigate(['/login']);
+  }
+  changeLang() {
+    this.languageService.changeLang();
   }
 }

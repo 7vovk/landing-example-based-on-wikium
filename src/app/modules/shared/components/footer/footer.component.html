@@ -1,31 +1,91 @@
-<div class="container">
+<ng-template #Russian>
+  <div class="container">
+    <div class="footer">
+      <div class="footer__inner">
+        <div class="footer__section--info">
+          <div class="footer__info-item">
+            <h6 class="footer__info-title">О проекте</h6>
+            <a href="#" class="footer__info-link">Что такое Викиум</a>
+            <a href="#" class="footer__info-link">СМИ о нас</a>
+            <a href="#" class="footer__info-link">Брейн-фитнес</a>
+            <a href="#" class="footer__info-link">Вакансии</a>
+            <a href="#" class="footer__info-link">Лицензионное соглашение</a>
+            <a href="#" class="footer__info-link">Политика конфиденциальности</a>
+          </div>
+          <div class="footer__info-item">
+            <h6 class="footer__info-title">Наука</h6>
+            <a href="#" class="footer__info-link">Методики</a>
+            <a href="#" class="footer__info-link">Как работает Викиум</a>
+            <a href="#" class="footer__info-link">Наука Викиум</a>
+            <a href="#" class="footer__info-link">Исследования Викиум</a>
+            <a href="#" class="footer__info-link">Библиотека</a>
+            <a href="#" class="footer__info-link">Тесты</a>
+          </div>
+          <div class="footer__info-item">
+            <h6 class="footer__info-title">Сотрудничество</h6>
+            <a href="#" class="footer__info-link">Партнерская программа</a>
+            <a href="#" class="footer__info-link">Корпоративное обучение</a>
+            <a href="#" class="footer__info-link">Пресс-служба</a>
+            <a href="#" class="footer__info-link">Для организаций</a>
+          </div>
+        </div>
+        <div class="footer__section--contacts">
+          <div class="footer__contacts-item">
+            <div class="footer__contacts-item__icons">
+              <a href="#"><img src="../../../../../assets/footer/vk.svg" alt="vkontatke"></a>
+              <a href="#"><img src="../../../../../assets/footer/facebook.svg" alt="facebook"></a>
+              <a href="#"><img src="../../../../../assets/footer/instagram.svg" alt="instagram"></a>
+              <a href="#"><img src="../../../../../assets/footer/odnoklassniki.svg" alt="odnoklassniki"></a>
+              <a href="#"><img src="../../../../../assets/footer/telegram.svg" alt="telegram"></a>
+            </div>
+            <a href="" class="footer__section-link">Помощь (FAQ)</a>
+            <a class="footer__section-link" href="mailto:support@wikium.ru">support@wikium.ru</a>
+          </div>
+          <div class="footer__contacts-item--corporate">
+            <p>Корпоративным клиентам:</p>
+            <a class="footer__section-link" href="mailto:corporate@wikium.ru">corporate@wikium.ru</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p class="footer__text">© Викиум.ру 2013 – 2019</p>
+      <div class="footer__text--tel">
+        <p>Телефон: <a class="footer__section-link quon_phone" href="tel:+74951338663">+7 (495) 133 86 63</a>
+          с 10:00 до 19:00 МСК по рабочим дням</p>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<div class="container" *ngIf="this.languageService.isLangRus; else Russian">
   <div class="footer">
     <div class="footer__inner">
       <div class="footer__section--info">
         <div class="footer__info-item">
-          <h6 class="footer__info-title">О проекте</h6>
-          <a href="#" class="footer__info-link">Что такое Викиум</a>
-          <a href="#" class="footer__info-link">СМИ о нас</a>
-          <a href="#" class="footer__info-link">Брейн-фитнес</a>
-          <a href="#" class="footer__info-link">Вакансии</a>
-          <a href="#" class="footer__info-link">Лицензионное соглашение</a>
-          <a href="#" class="footer__info-link">Политика конфиденциальности</a>
+          <h6 class="footer__info-title">About a project</h6>
+          <a href="#" class="footer__info-link">What is Wikium?</a>
+          <a href="#" class="footer__info-link">Mass Media about us</a>
+          <a href="#" class="footer__info-link">Brain Fitness</a>
+          <a href="#" class="footer__info-link">Vacancy</a>
+          <a href="#" class="footer__info-link">License agreement</a>
+          <a href="#" class="footer__info-link">Privacy policy</a>
         </div>
         <div class="footer__info-item">
-          <h6 class="footer__info-title">Наука</h6>
-          <a href="#" class="footer__info-link">Методики</a>
-          <a href="#" class="footer__info-link">Как работает Викиум</a>
-          <a href="#" class="footer__info-link">Наука Викиум</a>
-          <a href="#" class="footer__info-link">Исследования Викиум</a>
-          <a href="#" class="footer__info-link">Библиотека</a>
-          <a href="#" class="footer__info-link">Тесты</a>
+          <h6 class="footer__info-title">Science</h6>
+          <a href="#" class="footer__info-link">Methodologies</a>
+          <a href="#" class="footer__info-link">How Wikium works</a>
+          <a href="#" class="footer__info-link">Wikium Science</a>
+          <a href="#" class="footer__info-link">Wikium Research</a>
+          <a href="#" class="footer__info-link">Library</a>
+          <a href="#" class="footer__info-link">Tests</a>
         </div>
         <div class="footer__info-item">
-          <h6 class="footer__info-title">Сотрудничество</h6>
-          <a href="#" class="footer__info-link">Партнерская программа</a>
-          <a href="#" class="footer__info-link">Корпоративное обучение</a>
-          <a href="#" class="footer__info-link">Пресс-служба</a>
-          <a href="#" class="footer__info-link">Для организаций</a>
+          <h6 class="footer__info-title">Cooperation</h6>
+          <a href="#" class="footer__info-link">Partnership</a>
+          <a href="#" class="footer__info-link">Corporate training</a>
+          <a href="#" class="footer__info-link">Press office</a>
+          <a href="#" class="footer__info-link">For organizations</a>
         </div>
       </div>
       <div class="footer__section--contacts">
@@ -37,21 +97,21 @@
             <a href="#"><img src="../../../../../assets/footer/odnoklassniki.svg" alt="odnoklassniki"></a>
             <a href="#"><img src="../../../../../assets/footer/telegram.svg" alt="telegram"></a>
           </div>
-          <a href="" class="footer__section-link">Помощь (FAQ)</a>
+          <a href="" class="footer__section-link">Help (FAQ)</a>
           <a class="footer__section-link" href="mailto:support@wikium.ru">support@wikium.ru</a>
         </div>
         <div class="footer__contacts-item--corporate">
-          <p>Корпоративным клиентам:</p>
+          <p>To corporative clients:</p>
           <a class="footer__section-link" href="mailto:corporate@wikium.ru">corporate@wikium.ru</a>
         </div>
       </div>
     </div>
   </div>
   <div class="footer__copyright">
-    <p class="footer__text">© Викиум.ру 2013 – 2019</p>
+    <p class="footer__text">© Wikium.ru 2013 – 2019</p>
     <div class="footer__text--tel">
-      <p>Телефон: <a class="footer__section-link quon_phone" href="tel:+74951338663">+7 (495) 133 86 63</a>
-      с 10:00 до 19:00 МСК по рабочим дням</p>
+      <p>Phone: <a class="footer__section-link quon_phone" href="tel:+74951338663">+7 (495) 133 86 63</a>
+        from 10:00 to 19:00 Moscow time on weekdays</p>
     </div>
   </div>
 </div>

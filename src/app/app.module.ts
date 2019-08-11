@@ -8,6 +8,7 @@ import {ErrorInterceptor, fakeBackendProvider, JwtInterceptor} from './modules/a
 import {MainComponent} from './modules/main.component';
 import {RouterModule} from '@angular/router';
 import {BrowserModule} from '@angular/platform-browser';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import {BrowserModule} from '@angular/platform-browser';
     SharedModule,
     HttpClientModule,
     BrowserModule,
+    ScrollingModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},

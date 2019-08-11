@@ -1,3 +1,4 @@
+<ng-template #Russian>
 <div class="container">
   <div class="reviews-users">
     <p class="reviews-users__number">
@@ -28,4 +29,37 @@
   <button class="reviews__btn-more" (click)="toggle_class()"
           *ngIf="this.isButtonVisible"> Еще отзывы </button>
   <button class="blue-button">Присоединиться к Викиум</button>
+</div>
+</ng-template>
+
+<div class="container" *ngIf="this.languageService.isLangRus; else Russian">
+  <div class="reviews-users">
+    <p class="reviews-users__number">
+      4 478 815
+    </p>
+    <p class="reviews-users__text">
+      people are already training at Wikium
+    </p>
+  </div>
+  <div ngClass="reviews-items visible" *ngFor="let review of reviewsShownEng">
+    <div class="review">
+      <img src="{{review.image}}" alt="img" class="review__photo">
+      <div class="review__bloquote">
+        <p class="review__text">{{review.text}}</p>
+        <p class="review__name">{{review.name}}</p>
+      </div>
+    </div>
+  </div>
+  <div ngClass="reviews-items invisible" [className]=myClass *ngFor="let review of reviewsHiddenEng">
+    <div class="review">
+      <img src="{{review.image}}" alt="img" class="review__photo">
+      <div class="review__bloquote">
+        <p class="review__text">{{review.text}}</p>
+        <p class="review__name">{{review.name}}</p>
+      </div>
+    </div>
+  </div>
+  <button class="reviews__btn-more" (click)="toggle_class()"
+          *ngIf="this.isButtonVisible"> More reviews </button>
+  <button class="blue-button">Join Wikium</button>
 </div>
