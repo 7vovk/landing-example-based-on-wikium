@@ -4,6 +4,7 @@ import { first } from 'rxjs/operators';
 import { User } from '../_models';
 import {AuthenticationService, UserService} from '../_services';
 import {Router} from '@angular/router';
+import {LanguageService} from '../../shared/services/language.service';
 
 @Component({ templateUrl: 'admin.component.html' })
 export class AdminComponent implements OnInit {
@@ -12,7 +13,8 @@ export class AdminComponent implements OnInit {
   constructor(
     private userService: UserService,
     private router: Router,
-    private authenticationService: AuthenticationService
+    private authenticationService: AuthenticationService,
+    private languageService: LanguageService
     ) { }
 
   ngOnInit() {
@@ -24,5 +26,9 @@ export class AdminComponent implements OnInit {
   logout() {
     this.authenticationService.logout();
     this.router.navigate(['/login']);
+  }
+
+  changeLang() {
+    this.languageService.changeLang();
   }
 }

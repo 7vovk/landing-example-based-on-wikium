@@ -15,7 +15,7 @@
         cursor: pointer;
       }
     }
-    button {
+    button, .language, option {
       height: 40px;
       background: no-repeat;
       color: #fff;
@@ -25,6 +25,9 @@
         background: #ffffff6e;
         color: #3b2b6a;
       }
+    }
+    option {
+      color: #3b2b6a;
     }
     .header-top__logo {
       img {

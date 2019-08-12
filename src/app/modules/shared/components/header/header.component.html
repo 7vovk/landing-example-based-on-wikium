@@ -2,7 +2,13 @@
   <div class="header">
     <div class="header-top">
       <div class="header-top__logo"><img src="../../../../../assets/logos/header-logo.svg" alt=""></div>
-      <button type="button" class="btn btn-light" (click)="changeLang()">Сменить язык</button>
+      <!--<button type="button" class="btn btn-light" (click)="changeLang()">Сменить язык</button>-->
+      <div class="form-group">
+        <select class="form-control language" (change)="changeLang()">
+          <option>Русский</option>
+          <option>English</option>
+        </select>
+      </div>
       <button *ngIf="isAdmin" type="button" class="btn btn-light" (click)="admin()">Администратор</button>
       <button *ngIf="currentUser" type="button" class="btn btn-light" (click)="logout()">Выйти</button>
     </div>
@@ -22,9 +28,14 @@
 <div class="header" *ngIf="this.languageService.isLangRus; else Russian">
   <div class="header-top">
     <div class="header-top__logo"><img src="../../../../../assets/logos/header-logo.svg" alt=""></div>
-    <button type="button" class="btn btn-light" (click)="changeLang()">Change language</button>
+    <div class="form-group">
+      <select class="form-control language" (change)="changeLang()">
+        <option>English</option>
+        <option>Русский</option>
+      </select>
+    </div>
     <button *ngIf="isAdmin" type="button" class="btn btn-light" (click)="admin()">Admin</button>
-    <button *ngIf="currentUser" type="button" class="btn btn-light" (click)="logout()">Log out</button>
+    <button *ngIf="currentUser" type="button" class="btn btn-light" (click)="logout()">Logout</button>
   </div>
   <header>
     <h1 class="header-title">Train your brain with pleasure</h1>
@@ -32,7 +43,7 @@
   </header>
   <div class="header-btns">
     <button class="header-btns__start">Start growth</button>
-    <a *ngIf="!currentUser" (click)="login()">У меня уже есть аккаунт</a>
+    <a *ngIf="!currentUser" (click)="login()">I already have an account</a>
 
     <app-arrow-down (click)="scrollToBenefits()"></app-arrow-down>
   </div>
