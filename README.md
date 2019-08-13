@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
+[Angular Particlesjs](https://github.com/audrenbdb/angular-particlesjs) is used as background in the header. 
+
+[Current topic](https://jasonwatmore.com/post/2018/11/22/angular-7-role-based-authorization-tutorial-with-example) is used to implement authorization.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
