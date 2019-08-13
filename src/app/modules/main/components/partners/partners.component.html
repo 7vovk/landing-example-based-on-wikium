@@ -1,0 +1,71 @@
+<ng-template #Russian>
+  <div class="landing-partners">
+    <h3 class="section__title">О нас пишут и говорят</h3>
+    <div class="landing-partners__press">
+      <div class="landing-partners__press-item  landing-partners__press-item--1"></div>
+      <div class="landing-partners__press-item  landing-partners__press-item--2"></div>
+      <div class="landing-partners__press-item  landing-partners__press-item--3"></div>
+      <div class="landing-partners__press-item  landing-partners__press-item--4"></div>
+      <div class="landing-partners__press-item  landing-partners__press-item--5"></div>
+    </div>
+    <h3 class="section__title">Наши награды и достижения</h3>
+    <div class="landing-partners__items">
+      <div class="landing-partners__item landing-partners__item--1"></div>
+      <div class="landing-partners__item landing-partners__item--2"></div>
+      <div class="landing-partners__item landing-partners__item--3"></div>
+    </div>
+    <p class="landing-partners__text">Викиум – участник престижнейших международных форумов и конференций</p>
+    <div class="landing-partners__items">
+      <div class="landing-partners__item--4"></div>
+      <div class="landing-partners__item landing-partners__item--5"></div>
+    </div>
+    <p class="landing-partners__text">Нас выбирают</p>
+    <div class="landing-partners__items">
+      <div class="landing-partners__item--splat"></div>
+      <div class="landing-partners__item--okay"></div>
+      <div class="landing-partners__item--mts"></div>
+      <div class="landing-partners__item--luk"></div>
+    </div>
+    <div class="landing-partners__items">
+      <div class="landing-partners__item--kredit"></div>
+      <div class="landing-partners__item--rostel"></div>
+      <div class="landing-partners__item--sovkom"></div>
+      <div class="landing-partners__item--birga"></div>
+    </div>
+  </div>
+</ng-template>
+
+<div class="landing-partners" *ngIf="this.languageService.isLangRus; else Russian">
+  <h3 class="section__title">People write and talk about us</h3>
+  <div class="landing-partners__press">
+    <div class="landing-partners__press-item  landing-partners__press-item--1"></div>
+    <div class="landing-partners__press-item  landing-partners__press-item--2"></div>
+    <div class="landing-partners__press-item  landing-partners__press-item--3"></div>
+    <div class="landing-partners__press-item  landing-partners__press-item--4"></div>
+    <div class="landing-partners__press-item  landing-partners__press-item--5"></div>
+  </div>
+  <h3 class="section__title">Our rewards and achievements</h3>
+  <div class="landing-partners__items">
+    <div class="landing-partners__item landing-partners__item--1"></div>
+    <div class="landing-partners__item landing-partners__item--2"></div>
+    <div class="landing-partners__item landing-partners__item--3"></div>
+  </div>
+  <p class="landing-partners__text">Wikium is a participant in prestigious international forums and conferences</p>
+  <div class="landing-partners__items">
+    <div class="landing-partners__item--4"></div>
+    <div class="landing-partners__item landing-partners__item--5"></div>
+  </div>
+  <p class="landing-partners__text">People choose us</p>
+  <div class="landing-partners__items">
+    <div class="landing-partners__item--splat"></div>
+    <div class="landing-partners__item--okay"></div>
+    <div class="landing-partners__item--mts"></div>
+    <div class="landing-partners__item--luk"></div>
+  </div>
+  <div class="landing-partners__items">
+    <div class="landing-partners__item--kredit"></div>
+    <div class="landing-partners__item--rostel"></div>
+    <div class="landing-partners__item--sovkom"></div>
+    <div class="landing-partners__item--birga"></div>
+  </div>
+</div>

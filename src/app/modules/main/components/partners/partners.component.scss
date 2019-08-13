@@ -1,0 +1,145 @@
+:host {
+  display: block;
+  height: 1290px;
+  padding: 100px 0 64px;
+}
+
+.landing-partners {
+  .section__title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 55px;
+  }
+  &__press {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px 100px;
+    &-item {
+      background: url("../../../../../assets/partners/partners.png");
+      transform: scale(.8);
+    }
+    &-item--1 {
+      width: 163px;
+      height: 37px;
+      background-position: 0 -186px;
+      background-size: 225px;
+    }
+    &-item--2 {
+      width: 174px;
+      height: 34px;
+      background-position: 0 -197px;
+      background-size: 198px;
+    }
+    &-item--3 {
+      width: 91px;
+      height: 81px;
+      background-position: -147px 0;
+    }
+    &-item--4 {
+      width: 100px;
+      height: 95px;
+      background-position: 0 -512px;
+      background-size: 196px;
+    }
+    &-item--5 {
+      width: 135px;
+      height: 36px;
+      background-position: 0 0;
+      background-size: 226px;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 100px;
+    .landing-partners__item {
+      background: url("../../../../../assets/partners/partners.png");
+    }
+    .landing-partners__item--1 {
+      width: 189px;
+      height: 78px;
+      background-position: 0 -454px;
+    }
+    .landing-partners__item--2 {
+      width: 99px;
+      height: 125px;
+      background-position: -125px -641px;
+    }
+    .landing-partners__item--3 {
+      width: 100px;
+      height: 103px;
+      background-image: url("../../../../../assets/partners/nisha.png");
+      background-size: cover;
+    }
+    .landing-partners__item--4 {
+      width: 237px;
+      height: 72px;
+      background-image: url("../../../../../assets/partners/innovations.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .landing-partners__item--5 {
+      width: 220px;
+      height: 109px;
+      background-position: 0 -532px;
+    }
+    .landing-partners__item--splat {
+      width: 80px;
+      height: 68px;
+      background-image: url("../../../../../assets/partners/splat.png");
+      background-size: 100%;
+    }
+    .landing-partners__item--okay {
+      width: 130px;
+      height: 65px;
+      background-image: url("../../../../../assets/partners/okay.png");
+      background-size: 100%;
+    }
+    .landing-partners__item--mts {
+      width: 100px;
+      height: 50px;
+      background-image: url("../../../../../assets/partners/mts.png");
+      background-size: 100%;
+    }
+    .landing-partners__item--luk {
+      width: 68px;
+      height: 88px;
+      background-image: url("../../../../../assets/partners/luk.png");
+      background-size: 100%;
+    }
+    .landing-partners__item--kredit {
+      width: 200px;
+      height: 26px;
+      background-image: url("../../../../../assets/partners/kredit.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .landing-partners__item--rostel {
+      width: 112px;
+      height: 92px;
+      background-image: url("../../../../../assets/partners/rostelecom.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .landing-partners__item--sovkom {
+      width: 180px;
+      height: 40px;
+      background-image: url("../../../../../assets/partners/sovkom.png");
+      background-size: 100%;
+    }
+    .landing-partners__item--birga {
+      width: 168px;
+      height: 43px;
+      background-image: url("../../../../../assets/partners/birga.png");
+      background-size: 100%;
+    }
+  }
+  &__text {
+    max-width: 629px;
+    margin: 0 auto 30px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+}

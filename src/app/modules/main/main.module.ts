@@ -12,6 +12,7 @@ import {AppRoutingModule} from '../../app-routing.module';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AdminComponent} from '../auth/admin';
 import {LoginComponent} from '../auth/login';
+import { PartnersComponent } from './components/partners/partners.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import {LoginComponent} from '../auth/login';
     ReviewsComponent,
     AdminComponent,
     LoginComponent,
+    PartnersComponent,
   ],
   exports: [
     ParticlesComponent,
@@ -38,6 +40,7 @@ import {LoginComponent} from '../auth/login';
     ScienceComponent,
     AboutComponent,
     ReviewsComponent,
+    PartnersComponent
   ]
 })
 export class MainModule {
