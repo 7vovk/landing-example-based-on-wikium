@@ -56,6 +56,7 @@
     &__start {
       margin: 100px 0 40px;
       background-color: #03a9f4;
+      text-decoration: none;
       border: none;
       border-radius: 50px;
       color: #fff;
@@ -72,7 +73,7 @@
         background-color: #35baf6;
       }
     }
-    a {
+    #header-btns__login, #header-btns__loginEng {
       text-decoration: none;
       color: #03a9f4;
       &:hover {

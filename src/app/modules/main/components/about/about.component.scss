@@ -48,6 +48,7 @@
   }
   .blue_button {
     display: block;
+    width: 300px;
     margin: 0 auto;
     background-color: #03a9f4;
     border: none;
@@ -62,6 +63,7 @@
     &:hover {
       box-shadow: 0 6px 16px 0 rgba(0, 0, 0, .2);
       background-color: #35baf6;
+      text-decoration: none;
     }
   }
 }

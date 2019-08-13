@@ -79,6 +79,7 @@
   .blue-button {
     display: block;
     margin: 80px auto 0;
+    width: 370px;
     background-color: #03a9f4;
     border: none;
     border-radius: 50px;
@@ -92,6 +93,7 @@
     &:hover {
       box-shadow: 0 6px 16px 0 rgba(0, 0, 0, .2);
       background-color: #35baf6;
+      text-decoration: none;
     }
   }
 }

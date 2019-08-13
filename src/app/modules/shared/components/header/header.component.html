@@ -1,8 +1,11 @@
 <ng-template #Russian>
   <div class="header">
     <div class="header-top">
-      <div class="header-top__logo"><img src="../../../../../assets/logos/header-logo.svg" alt=""></div>
-      <!--<button type="button" class="btn btn-light" (click)="changeLang()">Сменить язык</button>-->
+      <div class="header-top__logo">
+        <a href="https://wikium.ru/">
+          <img src="../../../../../assets/logos/header-logo.svg" alt="">
+        </a>
+      </div>
       <div class="form-group">
         <select class="form-control language" (change)="changeLang()">
           <option>Русский</option>
@@ -17,9 +20,8 @@
       <p class="header-subtitle">Развивайте память, внимание и мышление с помощью онлайн-тренажеров</p>
     </header>
     <div class="header-btns">
-      <button class="header-btns__start">{{'Начать развиваться' | uppercase}}</button>
-      <a *ngIf="!currentUser" (click)="login()">У меня уже есть аккаунт</a>
-
+      <a href="https://wikium.ru/start" class="header-btns__start">{{'Начать развиваться' | uppercase}}</a>
+      <a id="header-btns__login" *ngIf="!currentUser" (click)="login()">У меня уже есть аккаунт</a>
       <app-arrow-down (click)="scrollToBenefits()"></app-arrow-down>
     </div>
   </div>
@@ -27,7 +29,11 @@
 
 <div class="header" *ngIf="this.languageService.isLangRus; else Russian">
   <div class="header-top">
-    <div class="header-top__logo"><img src="../../../../../assets/logos/header-logo.svg" alt=""></div>
+    <div class="header-top__logo">
+      <a href="https://wikium.ru/">
+        <img src="../../../../../assets/logos/header-logo.svg" alt="">
+      </a>
+    </div>
     <div class="form-group">
       <select class="form-control language" (change)="changeLang()">
         <option>English</option>
@@ -43,7 +49,7 @@
   </header>
   <div class="header-btns">
     <button class="header-btns__start">{{'Start growth'| uppercase}}</button>
-    <a *ngIf="!currentUser" (click)="login()">I already have an account</a>
+    <a id="header-btns__loginEng" *ngIf="!currentUser" (click)="login()">I already have an account</a>
 
     <app-arrow-down (click)="scrollToBenefits()"></app-arrow-down>
   </div>
