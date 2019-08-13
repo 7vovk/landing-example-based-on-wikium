@@ -16,28 +16,9 @@
       line-height: 25px;
     }
     &__info, &__text {
-      font-size: 55px;
-      padding: 0 65px;
-      display: flex;
-      justify-content: space-around;
-      top: 290px;
-      margin: 0 20px;
-      .benefits-item__text-1 {
-        color: #27a8e0;
-        width: 175px;
-      }
-      .benefits-item__text-2 {
-        color: #b47cfc;
-        width: 175px;
-      }
-      .benefits-item__text-3 {
-        color: #ec5956;
-        width: 175px;
-      }
-      .benefits-item__text-4 {
-        color: #23b175;
-        width: 175px;
-      }
+      width: 175px;
+      display: inline-block;
+      margin: 0 30px;
     }
     &__text {
       p {
@@ -66,7 +47,6 @@
     line-height: 1.4;
     letter-spacing: 0.5px;
     cursor: pointer;
-    text-transform: uppercase;
     &:hover {
       box-shadow: 0 6px 16px 0 rgba(0, 0, 0, .2);
       background-color: #35baf6;

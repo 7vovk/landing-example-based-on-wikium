@@ -28,7 +28,7 @@
   </div>
   <button class="reviews__btn-more" (click)="toggle_class()"
           *ngIf="this.isButtonVisible"> Еще отзывы </button>
-  <button class="blue-button">Присоединиться к Викиум</button>
+  <button class="blue-button">{{'Присоединиться к Викиум' | uppercase}}</button>
 </div>
 </ng-template>
 
@@ -61,5 +61,5 @@
   </div>
   <button class="reviews__btn-more" (click)="toggle_class()"
           *ngIf="this.isButtonVisible"> More reviews </button>
-  <button class="blue-button">Join Wikium</button>
+  <button class="blue-button">{{'Join Wikium' | uppercase}}</button>
 </div>

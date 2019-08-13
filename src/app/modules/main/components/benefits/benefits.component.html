@@ -4,22 +4,13 @@
     <p class="benefits-item__subtitle">В основе тренажеров Викиум лежат методики российских и зарубежных
       нейропсихологов,
       доказавшие свою эффективность в ходе множества экспериментов и научных работ</p>
-    <div class="benefits-item__info">
-      <p class="benefits-item__text-1">+17%</p>
-      <p class="benefits-item__text-2">х1,6</p>
-      <p class="benefits-item__text-3">x2,1</p>
-      <p class="benefits-item__text-4">+19%</p>
+    <div class="benefits-item__info" *ngFor="let item of benefitsItem">
+      <p class="benefits-item__text" [ngStyle]="{'color':getColor(item.value), 'font-size':'55px'}">{{item.value}}</p>
+      <p class="benefits-item__text" [ngStyle]="{'font-size':'14px', 'vertical-align': 'top'}">{{item.text}}</p>
     </div>
-    <div class="benefits-item__text">
-      <p>к скорости реакции за неделю</p>
-      <p>к фокусировке на задачах за 1 месяц</p>
-      <p>к вниманию к мелочам и деталям за 2 месяца</p>
-      <p>к памяти за 2–3 недели</p>
-    </div>
-
     <p class="investigation">На основе исследования 16 314 412 тренировок пользователей Викиум</p>
 
-    <button class="blue-button">Начать развиваться</button>
+    <button class="blue-button">{{'Начать развиваться' | uppercase}}</button>
   </div>
 </ng-template>
 
@@ -27,20 +18,12 @@
   <h3 class="benefits-item__title">Effect of classes</h3>
   <p class="benefits-item__subtitle">The Wikium simulators are based on the methods of Russian and foreign
     neuropsychologists, who have proven their effectiveness in many experiments and scientific papers.</p>
-  <div class="benefits-item__info">
-    <p class="benefits-item__text-1">+17%</p>
-    <p class="benefits-item__text-2">х1,6</p>
-    <p class="benefits-item__text-3">x2,1</p>
-    <p class="benefits-item__text-4">+19%</p>
-  </div>
-  <div class="benefits-item__text">
-    <p>to the reaction rate per week</p>
-    <p>focus on tasks for 1 month</p>
-    <p>attention to detail and details in 2 months</p>
-    <p>for memory in 2-3 weeks</p>
+  <div class="benefits-item__info" *ngFor="let item of benefitsItem">
+    <p class="benefits-item__text" [ngStyle]="{'color':getColor(item.value), 'font-size':'55px'}">{{item.value}}</p>
+    <p class="benefits-item__text" [ngStyle]="{'font-size':'14px', 'vertical-align': 'top'}">{{item.textEng}}</p>
   </div>
 
   <p class="investigation">Based on a study of 16,314,412 training sessions for Wikium users</p>
 
-  <button class="blue-button">Start growth</button>
+  <button class="blue-button">{{'Start growth' | uppercase}}</button>
 </div>

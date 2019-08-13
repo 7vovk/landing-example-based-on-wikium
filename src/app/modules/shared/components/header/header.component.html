@@ -17,7 +17,7 @@
       <p class="header-subtitle">Развивайте память, внимание и мышление с помощью онлайн-тренажеров</p>
     </header>
     <div class="header-btns">
-      <button class="header-btns__start">Начать развиваться</button>
+      <button class="header-btns__start">{{'Начать развиваться' | uppercase}}</button>
       <a *ngIf="!currentUser" (click)="login()">У меня уже есть аккаунт</a>
 
       <app-arrow-down (click)="scrollToBenefits()"></app-arrow-down>
@@ -42,7 +42,7 @@
     <p class="header-subtitle">Develop memory, attention and thinking with online simulators</p>
   </header>
   <div class="header-btns">
-    <button class="header-btns__start">Start growth</button>
+    <button class="header-btns__start">{{'Start growth'| uppercase}}</button>
     <a *ngIf="!currentUser" (click)="login()">I already have an account</a>
 
     <app-arrow-down (click)="scrollToBenefits()"></app-arrow-down>
