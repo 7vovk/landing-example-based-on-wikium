@@ -61,5 +61,5 @@
   </div>
   <button class="reviews__btn-more" (click)="toggle_class()"
           *ngIf="this.isButtonVisible"> More reviews </button>
-  <a href="https://wikium.ru/start" class="blue-button">{{'Join Wikium' | uppercase}}</a>
+  <a href="https://wikium.ru/start" class="blue-button" [ngStyle]="{'width':'230px'}">{{'Join Wikium' | uppercase}}</a>
 </div>
